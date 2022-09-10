@@ -6,9 +6,9 @@ $(document).ready(function() {
   })
 
   $(window).scroll(function () {
+    var windowHeight = $(window).height();
     var targetElement = $('.fadein').offset().top;
     var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
     if (scroll > targetElement) {
       $('.fadein').css('opacity', '1');
     }
