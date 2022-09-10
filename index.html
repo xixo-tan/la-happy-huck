@@ -10,6 +10,7 @@
   <!-- JavaScript -->
   <script src="js/jquery.bgswitcher.js"></script>
   <script src="js/slick.min.js"></script>
+
   <script src="js/main.js"></script>
 
   <!-- css -->
@@ -28,13 +29,15 @@
       </ul>
     </nav>
     <div class="logo">
-      <h1><img src="images/logo.png" alt=""></h1>
-      <p>We are Web Designers.</p>
+      <div class="logo-inner">
+        <h1><img src="images/logo.png" alt=""></h1>
+        <p>We are Web Designers.</p>
+      </div>
     </div>
   </header>
   <section id="introduction" class="fadein">
     <h2 class="title">Introduction</h2>
-    <div class="intro_detail">
+    <div class="intro-detail">
       <img src="images/introduction_001.jpg" class="intro-img">
       <div class="intro-about">
         <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
@@ -43,7 +46,7 @@
         <a href="#introduction" class="register-btn1">会員登録</a>
       </div>
     </div>
-    <div class="intro_detail">
+    <div class="intro-detail intro-detail2">
       <div class="intro-about">
         <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
         WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
@@ -55,66 +58,62 @@
   </section>
   <section id="courses" class="fadein">
     <div id="particles-js"></div>
-
-      <h2 class="title">Courses</h2>
-      <div class="all-courses-wrap">
-        <div class="courses">
-          <div class="course">
-            <div class="course-img">
-              <img src="images/html.png" alt="">
-            </div>
-            <h3 class="course-name">HTMLコース</h3>
-            <a href="#courses" class="course-btn btn-html">このコースを受ける</a>
+    <h2 class="title">Courses</h2>
+    <div class="all-courses-wrap">
+      <div class="courses">
+        <div class="course">
+          <div class="course-img">
+            <img src="images/html.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/css.png" alt="">
-            </div>
-            <h3 class="course-name">CSSコース</h3>
-            <a href="#courses" class="course-btn btn-css">このコースを受ける</a>
+          <h3 class="course-name">HTMLコース</h3>
+          <a href="#courses" class="course-btn btn-html">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/css.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/unity.png" alt="">
-            </div>
-            <h3 class="course-name">Unityコース</h3>
-            <a href="#courses" class="course-btn btn-unity">このコースを受ける</a>
+          <h3 class="course-name">CSSコース</h3>
+          <a href="#courses" class="course-btn btn-css">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/unity.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/ruby.png" alt="">
-            </div>
-            <h3 class="course-name">Rubyコース</h3>
-            <a href="#courses" class="course-btn btn-ruby">このコースを受ける</a>
+          <h3 class="course-name">Unityコース</h3>
+          <a href="#courses" class="course-btn btn-unity">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/ruby.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/js.png" alt="">
-            </div>
-            <h3 class="course-name">JavaScriptコース</h3>
-            <a href="#courses" class="course-btn btn-js">このコースを受ける</a>
+          <h3 class="course-name">Rubyコース</h3>
+          <a href="#courses" class="course-btn btn-ruby">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/js.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/swift.png" alt="">
-            </div>
-            <h3 class="course-name">Swiftコース</h3>
-            <a href="#courses" class="course-btn btn-swift">このコースを受ける</a>
+          <h3 class="course-name">JavaScriptコース</h3>
+          <a href="#courses" class="course-btn btn-js">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/swift.png" alt="">
           </div>
-          <div class="course">
-            <div class="course-img">
-              <img src="images/go.png" alt="">
-            </div>
-            <h3 class="course-name">Goコース</h3>
-            <a href="#courses" class="course-btn btn-go">このコースを受ける</a>
+          <h3 class="course-name">Swiftコース</h3>
+          <a href="#courses" class="course-btn btn-swift">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-img">
+            <img src="images/go.png" alt="">
           </div>
+          <h3 class="course-name">Goコース</h3>
+          <a href="#courses" class="course-btn btn-go">このコースを受ける</a>
         </div>
       </div>
+    </div>
 
   </section>
-
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.js"></script>
 
   <section id="images" class="fadein">
     <h2 class="title">Images</h2>
@@ -128,12 +127,14 @@
   </section>
   <section id="access" class="fadein">
     <h2 class="title">Access</h2>
-    <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3131287759825!2d135.49025991523217!3d34.697281280435405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1662639678072!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3131287759825!2d135.49025991523217!3d34.697281280435405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1662639678072!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
   <footer>
     <p>&copy; 2019 Happy Hack Inc.</p>
   </footer>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
