@@ -5,13 +5,25 @@ $(document).ready(function() {
     loop: true
   })
 
-  $(window).scroll(function () {
+  // $(window).scroll(function () {
+  //   var windowHeight = $(window).height();
+  //   var targetElement = $('.fadein').offset().top;
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll > targetElement) {
+  //     $('.fadein').css('opacity', '1');
+  //   }
+  // });
+
+  $('.fuwat').css('visibility','hidden');
+  $(window).scroll(function(){
     var windowHeight = $(window).height();
-    var targetElement = $('.fadein').offset().top;
-    var scroll = $(window).scrollTop();
-    if (scroll > targetElement) {
-      $('.fadein').css('opacity', '1');
-    }
+    var topWindow = $(window).scrollTop();
+    $('.fuwat').each(function () {
+    var objectPosition = $(this).offset().top;
+      if (topWindow > objectPosition - windowHeight + 200) {
+        $(this).addClass("fuwatAnime");
+      }
+    });
   });
 
   var windowWidth = $(window).width();
