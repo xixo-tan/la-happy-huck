@@ -26,9 +26,7 @@ $(document).ready(function() {
     });
   });
 
-  var windowWidth = $(window).width();
-  if (windowWidth > 480) {
-    $('.slider').slick({
+  $('.slider').slick({
       autoplay: false,
       slidesToShow: 4,
       infinite: true,
@@ -36,16 +34,13 @@ $(document).ready(function() {
       dots: true,
       arrows: true,
       centerPadding: '0',
+      responsive: [
+      {
+        breakpoint: 480, // 399px以下のサイズに適用
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
     });
-  } else {
-    $('.slider').slick({
-      autoplay: false,
-      slidesToShow: 1,
-      infinite: true,
-      slidesToScroll: 1,
-      dots: true,
-      arrows: true,
-      centerPadding: '0',
-    });
-  }
 });
